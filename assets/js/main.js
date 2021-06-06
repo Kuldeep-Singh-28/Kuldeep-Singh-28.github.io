@@ -68,91 +68,158 @@
      ----------------------------------*/
   function skill_html() {
     $("#html").LineProgressbar({
-      percentage: 95,
+      percentage: 93,
       radius: "3px",
       height: "10px",
-      duration: 6000,
+      duration: 4000,
       backgroundColor: "#ddd",
     });
   }
   skill_html();
 
-  function skill_css() {
-    $("#css").LineProgressbar({
-      percentage: 90,
-      radius: "3px",
-      height: "10px",
-      duration: 6000,
-      backgroundColor: "#ddd",
-    });
-  }
-  skill_css();
-
   function skill_javaScript() {
     $("#javascript").LineProgressbar({
-      percentage: 65,
+      percentage: 80,
       radius: "3px",
       height: "10px",
-      duration: 6000,
+      duration: 4000,
       backgroundColor: "#ddd",
     });
   }
   skill_javaScript();
 
-  function skill_jquery() {
-    $("#jquery").LineProgressbar({
-      percentage: 75,
+  function skill_python() {
+    $("#python").LineProgressbar({
+      percentage: 85,
       radius: "3px",
       height: "10px",
-      duration: 6000,
+      duration: 4000,
       backgroundColor: "#ddd",
     });
   }
-  skill_jquery();
+  skill_python();
 
-  function skill_wordpress() {
-    $("#wordpress").LineProgressbar({
-      percentage: 95,
+  function skill_node_express() {
+    $("#node_express").LineProgressbar({
+      percentage: 82,
       radius: "3px",
       height: "10px",
-      duration: 6000,
+      duration: 4000,
       backgroundColor: "#ddd",
     });
   }
-  skill_wordpress();
+  skill_node_express();
 
+  function skill_react() {
+    $("#react").LineProgressbar({
+      percentage: 78,
+      radius: "3px",
+      height: "10px",
+      duration: 4000,
+      backgroundColor: "#ddd",
+    });
+  }
+  skill_react();
+
+  // design skills
   function skill_web_design() {
     $("#web-design").LineProgressbar({
       percentage: 90,
       radius: "3px",
       height: "10px",
-      duration: 6000,
+      duration: 4000,
       backgroundColor: "#ddd",
     });
   }
   skill_web_design();
 
-  function skill_php() {
-    $("#php").LineProgressbar({
-      percentage: 65,
+  function skill_figma() {
+    $("#figma").LineProgressbar({
+      percentage: 80,
       radius: "3px",
       height: "10px",
-      duration: 6000,
+      duration: 4000,
       backgroundColor: "#ddd",
     });
   }
-  skill_php();
+  skill_figma();
 
-  function skill_web_development() {
-    $("#web-development").LineProgressbar({
+  function skill_photoshop() {
+    $("#photoshop").LineProgressbar({
+      percentage: 89,
+      radius: "3px",
+      height: "10px",
+      duration: 4000,
+      backgroundColor: "#ddd",
+    });
+  }
+  skill_photoshop();
+
+  function skill_AdobeXD() {
+    $("#AdobeXD").LineProgressbar({
+      percentage: 90,
+      radius: "3px",
+      height: "10px",
+      duration: 4000,
+      backgroundColor: "#ddd",
+    });
+  }
+  skill_AdobeXD();
+
+  function skill_wordpress() {
+    $("#wordpress").LineProgressbar({
       percentage: 75,
       radius: "3px",
       height: "10px",
-      duration: 6000,
+      duration: 4000,
+      backgroundColor: "#ddd",
+    });
+  }
+  skill_wordpress();
+
+  //   other skills
+  function skill_mongodb() {
+    $("#mongodb").LineProgressbar({
+      percentage: 80,
+      radius: "3px",
+      height: "10px",
+      duration: 4000,
+      backgroundColor: "#ddd",
+    });
+  }
+  skill_mongodb();
+  function skill_mysql() {
+    $("#mysql").LineProgressbar({
+      percentage: 85,
+      radius: "3px",
+      height: "10px",
+      duration: 4000,
+      backgroundColor: "#ddd",
+    });
+  }
+  skill_mysql();
+
+  function skill_web_development() {
+    $("#web_development").LineProgressbar({
+      percentage: 90,
+      radius: "3px",
+      height: "10px",
+      duration: 4000,
       backgroundColor: "#ddd",
     });
   }
   skill_web_development();
+
+  function skill_github() {
+    $("#github").LineProgressbar({
+      percentage: 88,
+      radius: "3px",
+      height: "10px",
+      duration: 4000,
+      backgroundColor: "#ddd",
+    });
+  }
+  skill_github();
 
   /*--------------------------------
      05. jQuery counterUp
@@ -182,5 +249,4 @@
     /* Preloader */
     $(".preloader").removeClass("active");
   });
-  
 })(jQuery);
