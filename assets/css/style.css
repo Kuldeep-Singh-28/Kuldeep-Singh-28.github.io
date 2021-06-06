@@ -1253,3 +1253,253 @@ button:focus {
 .switcher-wrapper .switcher-inner .red button {
   background: #ff5d56;
 }
+
+
+
+/*-----------------------------------------
+* 16. Responsive CSS
+* -----------------------------------------*/
+/* Medium devices (tablets, less than 992px) */
+@media only screen and (max-width: 991px) {
+  .section-spacing {
+    padding: 60px 0;
+  }
+  /* Header Section */
+  .site-header {
+    padding: 8px 0;
+  }
+  .site-header.sticky-header .menu-toggle-line span {
+    background: #ffffff;
+  }
+  .banner-section .banner-inner {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+  }
+  .banner-section .banner-inner .center-picture {
+    max-width: 200px;
+  }
+  .banner-section .social-links {
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  /* Navigation */
+  .navigation .navigation-menu {
+    position: fixed;
+    max-width: 280px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1024;
+    opacity: 1;
+    visibility: visible;
+    overflow: auto;
+    display: block;
+    -webkit-overflow-scrolling: touch;
+    -webkit-transition: all 0.15s ease-in;
+    transition: all 0.15s ease-in;
+    background-color: #2e3135;
+    text-align: left;
+    width: 100%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  .navigation .navigation-menu.mobile-menu-hide {
+    left: -100%;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .navigation .navbar-nav .nav-item {
+    padding: 0;
+    width: 100%;
+  }
+  .navigation .navbar-nav .nav-item .nav-link {
+    color: #fafafa !important;
+    padding: 8px 30px 8px 15px;
+    border-top: 1px solid #424242;
+  }
+  .navigation .closeNav-btn {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    text-align: right;
+    float: right;
+    padding: 10px 15px;
+  }
+  .navigation .closeNav-btn i {
+    font-size: 16px;
+  }
+
+  /* Menu Toggle */
+  .navigation .navbar {
+    float: right;
+    text-align: right;
+  }
+  .menu-toggle-line {
+    width: 40px;
+    border: none;
+    padding: 7px 0 0;
+    background: none;
+    z-index: 99;
+  }
+  .menu-toggle-line.open:after {
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.15s ease-in;
+    transition: all 0.15s ease-in;
+  }
+  .menu-toggle-line span {
+    height: 2px;
+    width: 32px;
+    background: #ffffff;
+    display: block;
+    margin: 0 auto 8px;
+    transform-origin: 10px 0;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+  .menu-toggle-line.open span:nth-child(1) {
+    -webkit-transform: rotate(45deg) translate(6px, 1px);
+    transform: rotate(45deg) translate(6px, 1px);
+  }
+  .menu-toggle-line.open span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-toggle-line.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg) translate(6px, -3px);
+    transform: rotate(-45deg) translate(6px, -3px);
+  }
+  .back-to-top {
+    bottom: 15px;
+    right: 15px;
+  }
+  .pages .main-wrapper {
+    padding-top: 55px;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px */
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .btn {
+    font-size: 14px;
+    padding: 12px 24px;
+  }
+  .section-spacing {
+    padding: 50px 0;
+  }
+  .content-block {
+    margin-bottom: 40px;
+  }
+  .section-title h1 {
+    font-size: 36px;
+    margin: 0 0 45px;
+  }
+  .banner-section .banner-text h3 {
+    font-size: 40px;
+  }
+  .counter-box,
+  .Interest .card-body,
+  .portfolio-details,
+  .blog-details {
+    padding: 20px;
+  }
+  .portfolio-details h5,
+  .blog-details h5,
+  .blog .card h5 {
+    font-size: 18px;
+  }
+  .popup-detail-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  .section-title h4,
+  .portfolio-content h4 {
+    font-size: 20px;
+  }
+
+  .pages .main-wrapper {
+    padding-top: 55px;
+    margin: 0 auto 40px;
+  }
+  .coming-soon .text-logo {
+    font-size: 40px;
+    margin: 0 0 20px;
+  }
+  .coming-soon h2 {
+    font-size: 30px;
+  }
+  .coming-soon .sub-title {
+    font-size: 15px;
+  }
+  .coming-soon .countdown li {
+    width: 55px;
+    height: 55px;
+  }
+  .coming-soon .countdown .digit {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .coming-soon .countdown .smalltext {
+    font-size: 11px;
+    line-height: 11px;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media only screen and (max-width: 575px) {
+  .section-title h1 {
+    font-size: 32px;
+    padding-bottom: 4px;
+  }
+  .section-subtitle {
+    font-size: 23px;
+    margin-bottom: 30px !important;
+  }
+  .banner-section .banner-inner .info-button .btn {
+    width: 75%;
+    margin-bottom: 15px;
+  }
+  .banner-section .banner-inner .center-picture {
+    max-width: 150px;
+  }
+  .about-details ul {
+    float: none !important;
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  .portfolio #portfolio-flters li {
+    width: 45%;
+  }
+  .mfp-arrow-left {
+    left: -20px;
+  }
+  .mfp-arrow-right {
+    right: -20px;
+  }
+
+  .coming-soon .newsletter-form .input-group {
+    display: inline-block;
+  }
+  .coming-soon .input-group .form-control {
+    border-radius: 30px;
+    width: 100%;
+    margin: 0 0 15px;
+  }
+  .coming-soon .input-group .input-group-append .btn {
+    border-radius: 30px;
+    margin: 0 auto;
+  }
+}
