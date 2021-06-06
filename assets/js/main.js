@@ -182,4 +182,5 @@
     /* Preloader */
     $(".preloader").removeClass("active");
   });
+  
 })(jQuery);
