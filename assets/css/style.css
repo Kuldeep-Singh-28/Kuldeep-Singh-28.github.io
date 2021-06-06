@@ -997,3 +997,151 @@ button:focus {
   background-color: #000000;
   color: #ffffff;
 }
+
+/*-----------------------------------------
+* 14. Inner Pages
+* -----------------------------------------*/
+.pages .main-wrapper {
+  padding-top: 70px;
+  margin: 0 auto;
+}
+.pages .site-header {
+  background-color: #2e3135;
+}
+.pages .site-header.sticky-header {
+  background-color: #26282b;
+}
+.pages .portfolio-details,
+.pages .blog-details {
+  background: #2e3135;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  position: relative;
+  background-color: #26282b;
+  margin: 0;
+  padding: 30px 0;
+  border-radius: 0;
+}
+.breadcrumb .bread-list {
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 2px;
+  background-color: #2e3135;
+}
+
+/* 01. Not Found Page */
+.not-found-page h1 {
+  font-size: 150px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  line-height: 1;
+  margin-bottom: 30px;
+  text-shadow: -5px -5px 4px rgba(0, 0, 0, 0.68);
+}
+.not-found-page .search-btn {
+  font-size: 20px;
+  padding: 10px 20px;
+}
+.not-found-page .animate-ziro {
+  position: relative;
+  top: 15px;
+  -webkit-animation: movetext 1s infinite;
+  animation: movetext 1s infinite;
+}
+@keyframes movetext {
+  50% {
+    bottom: 10px;
+    top: 0px;
+  }
+}
+
+/*-----------------------------------------
+* 15. Styles Switcher CSS
+* -----------------------------------------*/
+.switcher-wrapper {
+  position: fixed;
+  top: 150px;
+  left: -202px;
+  z-index: 1024;
+  width: 202px;
+  background-color: #2e3135;
+  box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 0 8px 8px 0;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+}
+.switcher-wrapper.open {
+  left: 0;
+}
+.switcher-wrapper .switcher-trigger {
+  position: absolute;
+  background-color: #444444;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  left: 202px;
+  top: 10px;
+  border-radius: 0 6px 6px 0;
+  border: 0;
+  font-size: 20px;
+  text-align: center;
+}
+.switcher-wrapper .switcher-inner h6 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 15px 0;
+  margin: 0;
+  border-bottom: 1px solid #424242;
+}
+.switcher-wrapper .switcher-inner .color-list {
+  margin: 0 0 -10px -10px;
+}
+.switcher-wrapper .switcher-inner .color-list li {
+  position: relative;
+  padding: 0 0 10px 10px;
+  display: inline-block;
+}
+.switcher-wrapper .switcher-inner .color-list li button {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 0px;
+  color: #ffffff;
+}
+.switcher-wrapper .switcher-inner .color-list li button:before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 10px;
+}
+.switcher-wrapper .switcher-inner .green button {
+  background: #79d70f;
+}
+.switcher-wrapper .switcher-inner .pink button {
+  background: #ff1e56;
+}
+.switcher-wrapper .switcher-inner .blue button {
+  background: #40bad5;
+}
+.switcher-wrapper .switcher-inner .orange button {
+  background: #ff7315;
+}
+.switcher-wrapper .switcher-inner .purple button {
+  background: #9818d6;
+}
+.switcher-wrapper .switcher-inner .yellow button {
+  background: #ffd31d;
+}
+.switcher-wrapper .switcher-inner .magenta button {
+  background: #ff00ff;
+}
+.switcher-wrapper .switcher-inner .red button {
+  background: #ff5d56;
+}
