@@ -597,8 +597,6 @@ button:focus {
   }
 }
 
-
-
 /*-----------------------------------------
 * 09. About Section
 * -----------------------------------------*/
@@ -705,3 +703,27 @@ button:focus {
   text-align: right;
 }
 
+/*-----------------------------------------
+* 10. Interest Section
+* -----------------------------------------*/
+.Interest .card-body {
+  padding: 30px;
+  border-radius: 5px;
+  -webkit-transition: cubic-bezier(0.57, 0.11, 0.27, 0.9) 0.3s;
+  transition: cubic-bezier(0.57, 0.11, 0.27, 0.9) 0.3s;
+  border: 1px solid #424242;
+}
+.Interest .card-body:hover {
+  background-color: #2e3135;
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+  box-shadow: 0 0 10px rgba(33, 33, 33, 0.2);
+}
+.Interest .card-icon {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+.Interest .card-title h4 {
+  font-size: 22px;
+  font-weight: 600;
+}
