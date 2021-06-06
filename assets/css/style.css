@@ -1,0 +1,289 @@
+/*======================================================================
+ Table of Content:
+ 
+ 01. Google Fonts
+ 02. Basic Styles
+ 03. Typography
+ 04. Buttons
+ 05. Pre Loader
+ 06. Header Section
+ 07. Navigation Menu
+ 08. Banner Section
+ 09. About Section
+ 10. Interest Section
+ 11. Portfolio Section
+ 12. Blog Section
+ 13. Contact Section
+ 14. Inner Pages
+    01. Not Found Page
+    02. Coming Soon Page
+ 15. Styles Switcher CSS
+ 16. Responsive CSS
+ ========================================================================*/
+
+/*-----------------------------------------
+* 01. Google Fonts
+* -----------------------------------------*/
+/*-- Poppins font --*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap");
+/*-- Roboto font --*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap");
+
+/*-----------------------------------------
+* 02. Basic Styles
+* -----------------------------------------*/
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #2e3135;
+  color: #b6b6b6;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+}
+a {
+  text-decoration: none;
+  color: #b6b6b6;
+}
+a:hover {
+  color: #000000;
+  text-decoration: none;
+}
+a:focus {
+  outline: 0 none;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+a:hover img {
+  opacity: 0.88;
+}
+a,
+a i.fa,
+a img,
+.button,
+.btn {
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+ol,
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.gray-bg,
+.bg-light {
+  background-color: #26282b !important;
+}
+::selection {
+  color: #ffffff;
+}
+.row-items {
+  margin-top: -30px;
+}
+.row-items .row-item {
+  margin-top: 30px;
+}
+
+/*-----------------------------------------
+* 03. Typography
+* -----------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  color: #fafafa;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+p {
+  margin: 0 0 15px;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+
+/*-----------------------------------------
+* 04. Buttons
+* -----------------------------------------*/
+.btn {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  padding: 12px 34px;
+  text-transform: uppercase;
+  border: none;
+  overflow: hidden;
+  border-radius: 26px;
+  box-shadow: none;
+}
+.btn:focus,
+button:focus {
+  box-shadow: none;
+  outline: none !important;
+}
+.btn:before {
+  position: absolute;
+  top: 0;
+  height: 102%;
+  left: -25%;
+  width: 0%;
+  -webkit-transform: skew(-22deg);
+  transform: skew(-22deg);
+  -webkit-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+  z-index: 1;
+}
+.btn:hover:before {
+  width: 180%;
+}
+.btn span {
+  position: relative;
+  z-index: 2;
+}
+
+/* Button Small */
+.btn-small {
+  font-size: 12px;
+  padding: 6px 15px;
+}
+
+/* Button Primary */
+.btn-primary,
+.btn-primary:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled):active {
+  background-color: #333333;
+  color: #ffffff;
+}
+.btn-primary.disabled,
+.btn-primary:disabled {
+  color: #ffffff;
+  background-color: #666666;
+}
+.btn-primary:hover {
+  color: #ffffff;
+  background-color: #333333;
+}
+.btn-primary:before {
+  content: "";
+  background-color: #000000;
+}
+
+/* Button Secondary */
+.btn-secondary,
+.btn-secondary:focus,
+.btn-secondary:not(:disabled):not(.disabled):active:focus,
+.btn-secondary:not(:disabled):not(.disabled):active {
+  background-color: #666666;
+  color: #ffffff;
+}
+.btn-secondary:hover {
+  background-color: #666666;
+  color: #ffffff;
+}
+.btn-secondary.disabled,
+.btn-secondary:disabled {
+  background-color: #666666;
+  color: #ffffff;
+}
+.btn-secondary:before {
+  content: "";
+  background-color: #444444;
+}
+
+/* Button Link */
+.btn-link {
+  color: #333333;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.btn-link:hover {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Form Control */
+.form-control {
+  font-family: "Poppins", sans-serif;
+  background-color: #26282b;
+  color: #fafafa;
+  height: 50px;
+  font-size: 14px;
+  padding: 10px 22px;
+  box-shadow: none;
+  outline: none;
+  border: 1px solid #424242;
+  border-radius: 30px;
+}
+.form-control:focus {
+  color: #fafafa;
+  background: transparent;
+  box-shadow: none;
+  outline: none;
+}
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+  background: none;
+  box-shadow: none !important;
+}
+.section-spacing {
+  padding: 80px 0;
+}
+.content-block {
+  margin-bottom: 50px;
+}
+.content-block:last-child {
+  margin-bottom: 0;
+}
+
+/*-----------------------------------------
+* 05. Pre Loader
+* -----------------------------------------*/
+.preloader {
+  display: none;
+  background-color: #2e3135;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 99999;
+}
+.preloader.active {
+  display: block;
+}
+.preloader-inner {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border: 4px solid hsla(0, 0%, 0%, 0.2);
+  border-top-color: #333333;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to {
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
