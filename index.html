@@ -149,7 +149,7 @@
                             <div class="info-button">
                                 <a href="#about" class="btn btn-secondary about-btn mr-sm-3"><span><i
                                             class="fa fa-user mr-2"></i>More about me</span></a>
-                                <a href="#contact" class="btn btn-primary portfolio-btn mb-0"><span><i
+                                <a href="#portfolio" class="btn btn-primary portfolio-btn mb-0"><span><i
                                             class="fa fa-rocket mr-2"></i>My portfolio</span></a>
                             </div>
                         </div>
@@ -514,8 +514,8 @@
                             <ul id="portfolio-flters">
                                 <li class="btn filter-active" data-filter="*">All Work</li>
                                 <li class="btn" data-filter=".filter-design">Design</li>
-                                <li class="btn" data-filter=".filter-music">Music</li>
-                                <li class="btn" data-filter=".filter-videos">Videos</li>
+                                <li class="btn" data-filter=".filter-web">Web</li>
+                                <li class="btn" data-filter=".filter-apps">App</li>
                             </ul>
                             <!-- End Portfolio Filter -->
                         </div>
@@ -524,7 +524,8 @@
                     <!-- Row -->
                     <div class="row row-items portfolio-container project-gallery-item">
                         <!-- Portfolio One -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-design">
+                        <div
+                            class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-web filter-design">
                             <div class="portfolio-wrap">
                                 <img src="assets/images/portfolio/portfolio-1.jpg" class="img-fluid"
                                     alt="Portfolio 1" />
@@ -591,7 +592,8 @@
                         </div>
                         <!-- Portfolio One -->
                         <!-- Portfolio Two -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-videos">
+                        <div
+                            class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-design filter-apps">
                             <div class="portfolio-wrap">
                                 <img src="assets/images/portfolio/portfolio-2.jpg" class="img-fluid"
                                     alt="Portfolio 2" />
@@ -701,7 +703,7 @@
                                                     href="#">https://cafeteriaa.herokuapp.com/</a></li>
                                         </ul>
                                         <ul class="d-flex flex-row align-items-center text-center">
-                                            <li class="block-title"><strong class="font-14 parent-color pr-2">Share:
+                                            <li class="block-title"><strong class="font-14 parent-color pr-2">Git:
                                                 </strong></li>
                                             <li class="mr-3"><a
                                                     href="https://github.com/Kuldeep-Singh-28/Office-Cafeteria-App"
@@ -717,20 +719,20 @@
                         </div>
                         <!-- End Portfolio Two -->
                         <!-- Portfolio Three -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-videos">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-web">
                             <div class="portfolio-wrap">
                                 <img src="assets/images/portfolio/portfolio-3.jpg" class="img-fluid"
                                     alt="Portfolio 3" />
                                 <div
                                     class="portfolio-info d-flex flex-column align-items-center justify-content-center">
                                     <div class="portfolio-inner-info">
-                                        <h4>YouTube Video</h4>
-                                        <p>Videos</p>
+                                        <h4>Web Chat Room</h4>
+                                        <p>Web</p>
                                         <div
                                             class="portfolio-links d-flex flex-row align-items-center justify-content-center">
-                                            <a class="magnific-youtube"
-                                                href="https://www.youtube.com/watch?v=3rZ5Mxmprho"><i
-                                                    class="fa fa-youtube-play"></i></a>
+                                            <a class="fancylight gallery-popup-btn" data-fancybox-group="light"
+                                                href="assets/images/portfolio/portfolio-3.jpg"><i
+                                                    class="fa fa-picture-o"></i></a>
                                             <a class="portfolio-detail-popup" href="#portfolio-details-3"><i
                                                     class="fa fa-link"></i></a>
                                         </div>
@@ -742,44 +744,39 @@
                                 <h2 class="popup-detail-title">Project Title</h2>
                                 <div class="row">
                                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mb-4 mb-lg-0">
-                                        <div class="embed-responsive embed-responsive-16by9">
-                                            <iframe class="embed-responsive-item"
-                                                src="https://www.youtube.com/embed/3rZ5Mxmprho"
-                                                allowfullscreen=""></iframe>
-                                        </div>
+                                        <img src="assets/images/portfolio/portfolio-3.jpg" class="img-fluid"
+                                            alt="Portfolio 3" />
                                     </div>
                                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 portfolio-content">
                                         <h4 class="">Project Info:</h4>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem Ipsum has been the industry's standard dummy text ever since the
-                                            1500s, when an unknown printer took a galley book.</p>
+                                        <p>Developed a full-stack web-app for the online chat rooms. I have used google
+                                            authentication for easy access and deployed
+                                            using firebase. I have used :
+                                            <br>
+                                            — React, React-Router, React-Redux, React Context API
+                                            <br>
+                                            — Bootstrap and CSS for the designing of the website.
+                                            <br>
+                                            — Firebase Firestore real-time database and deployed using the firebase.
+                                        </p>
                                         <h4 class="mt-4">Project Details:</h4>
                                         <ul>
-                                            <li class="mb-1"><strong>Client</strong>: Lorem Ipsum</li>
-                                            <li class="mb-1"><strong>Category</strong>: Web design</li>
-                                            <li class="mb-1"><strong>Technologies</strong>: HTML5, CSS3, WordPress, PHP,
-                                                jQuery</li>
-                                            <li class="mb-1"><strong>Project date</strong>: 21 May, 2020</li>
+                                            <li class="mb-1"><strong>Name</strong>: Web Chat Room</li>
+                                            <li class="mb-1"><strong>Category</strong>: Web Development</li>
+                                            <li class="mb-1"><strong>Technologies</strong>: HTML5, CSS3, React, Js,
+                                                Firebase, Express, Bootstrap</li>
+                                            <li class="mb-1"><strong>Project date</strong>: 21 Dec, 2020</li>
                                             <li class="mb-1"><strong>Project URL</strong>: <a
-                                                    href="#">www.example.com</a></li>
+                                                    href="#">https://whatsapp-kss.web.app/</a></li>
                                         </ul>
                                         <ul class="d-flex flex-row align-items-center text-center">
-                                            <li class="block-title"><strong class="font-14 parent-color pr-2">Share:
+                                            <li class="block-title"><strong class="font-14 parent-color pr-2">Git:
                                                 </strong></li>
-                                            <li class="mr-3"><a href="#" data-toggle="tooltip" data-placement="top"
-                                                    data-original-title="Facebook"><i class="fa fa-facebook"></i></a>
+                                            <li class="mr-3"><a href="https://github.com/Kuldeep-Singh-28/Web-Chat-Room"
+                                                    data-toggle="tooltip" data-placement="top"
+                                                    data-original-title="github"><i class="fa fa-github"></i></a>
                                             </li>
-                                            <li class="mr-3"><a href="#" data-toggle="tooltip" data-placement="top"
-                                                    data-original-title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                                            <li class="mr-3"><a href="#" data-toggle="tooltip" data-placement="top"
-                                                    data-original-title="Google plus"><i
-                                                        class="fa fa-google-plus"></i></a></li>
-                                            <li class="mr-3"><a href="#" data-toggle="tooltip" data-placement="top"
-                                                    data-original-title="Instagram"><i class="fa fa-instagram"></i></a>
-                                            </li>
-                                            <li class="mr-3"><a href="#" data-toggle="tooltip" data-placement="top"
-                                                    data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a>
-                                            </li>
+
                                         </ul>
                                     </div>
                                 </div>
@@ -788,20 +785,20 @@
                         </div>
                         <!-- End Portfolio Three -->
                         <!-- Portfolio Four -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-videos">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-apps">
                             <div class="portfolio-wrap">
                                 <img src="assets/images/portfolio/portfolio-4.jpg" class="img-fluid"
                                     alt="Portfolio 4" />
                                 <div
                                     class="portfolio-info d-flex flex-column align-items-center justify-content-center">
                                     <div class="portfolio-inner-info">
-                                        <h4>Vimeo Video</h4>
-                                        <p>Videos</p>
+                                        <h4>Live Weather App</h4>
+                                        <p>App</p>
                                         <div
                                             class="portfolio-links d-flex flex-row align-items-center justify-content-center">
-                                            <a class="magnific-vimeo"
-                                                href="https://player.vimeo.com/video/182592195?title=0&amp;byline=0&amp;portrait=0"><i
-                                                    class="fa fa-vimeo"></i></a>
+                                            <a class="fancylight gallery-popup-btn" data-fancybox-group="light"
+                                                href="assets/images/portfolio/portfolio-4.jpg"><i
+                                                    class="fa fa-picture-o"></i></a>
                                             <a class="portfolio-detail-popup" href="#portfolio-details-4"><i
                                                     class="fa fa-link"></i></a>
                                         </div>
@@ -813,44 +810,32 @@
                                 <h2 class="popup-detail-title">Project Title</h2>
                                 <div class="row">
                                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mb-4 mb-lg-0">
-                                        <div class="embed-responsive embed-responsive-16by9">
-                                            <iframe class="embed-responsive-item"
-                                                src="https://player.vimeo.com/video/182592195?title=0&amp;byline=0&amp;portrait=0"
-                                                allowfullscreen=""></iframe>
-                                        </div>
+                                        <img src="assets/images/portfolio/portfolio-4.jpg" class="img-fluid"
+                                            alt="Portfolio 4" />
                                     </div>
                                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 portfolio-content">
                                         <h4 class="">Project Info:</h4>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem Ipsum has been the industry's standard dummy text ever since the
-                                            1500s, when an unknown printer took a galley book.</p>
+                                        <p>Live-weather-app, you can get real-time temperature reports of any place.
+                                            This is work on API System.</p>
                                         <h4 class="mt-4">Project Details:</h4>
                                         <ul>
-                                            <li class="mb-1"><strong>Client</strong>: Lorem Ipsum</li>
+                                            <li class="mb-1"><strong>Name</strong>: Live Weather App</li>
                                             <li class="mb-1"><strong>Category</strong>: Web design</li>
-                                            <li class="mb-1"><strong>Technologies</strong>: HTML5, CSS3, WordPress, PHP,
-                                                jQuery</li>
+                                            <li class="mb-1"><strong>Technologies</strong>: HTML5, CSS3, API, React,
+                                                Bootstrap</li>
                                             <li class="mb-1"><strong>Project date</strong>: 21 May, 2020</li>
                                             <li class="mb-1"><strong>Project URL</strong>: <a
-                                                    href="#">www.example.com</a></li>
+                                                    href="#">https://live-weather-app1.netlify.app/</a></li>
                                         </ul>
                                         <ul class="d-flex flex-row align-items-center text-center">
-                                            <li class="block-title"><strong class="font-14 parent-color pr-2">Share:
+                                            <li class="block-title"><strong class="font-14 parent-color pr-2">Git:
                                                 </strong></li>
-                                            <li class="mr-3"><a href="#" data-toggle="tooltip" data-placement="top"
-                                                    data-original-title="Facebook"><i class="fa fa-facebook"></i></a>
+                                            <li class="mr-3"><a
+                                                    href="https://github.com/Kuldeep-Singh-28/Live-Weather-App"
+                                                    data-toggle="tooltip" data-placement="top"
+                                                    data-original-title="github"><i class="fa fa-github"></i></a>
                                             </li>
-                                            <li class="mr-3"><a href="#" data-toggle="tooltip" data-placement="top"
-                                                    data-original-title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                                            <li class="mr-3"><a href="#" data-toggle="tooltip" data-placement="top"
-                                                    data-original-title="Google plus"><i
-                                                        class="fa fa-google-plus"></i></a></li>
-                                            <li class="mr-3"><a href="#" data-toggle="tooltip" data-placement="top"
-                                                    data-original-title="Instagram"><i class="fa fa-instagram"></i></a>
-                                            </li>
-                                            <li class="mr-3"><a href="#" data-toggle="tooltip" data-placement="top"
-                                                    data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a>
-                                            </li>
+
                                         </ul>
                                     </div>
                                 </div>
@@ -859,15 +844,16 @@
                         </div>
                         <!-- End Portfolio Four -->
                         <!-- Portfolio Five -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-music">
+                        <div
+                            class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-design filter-web">
                             <div class="portfolio-wrap">
                                 <img src="assets/images/portfolio/portfolio-5.jpg" class="img-fluid"
                                     alt="Portfolio 5" />
                                 <div
                                     class="portfolio-info d-flex flex-column align-items-center justify-content-center">
                                     <div class="portfolio-inner-info">
-                                        <h4>SoundCloud Audio</h4>
-                                        <p>Music</p>
+                                        <h4>LMS</h4>
+                                        <p>Design | Web</p>
                                         <div
                                             class="portfolio-links d-flex flex-row align-items-center justify-content-center">
                                             <a class="magnific-soundcloud"
@@ -889,36 +875,37 @@
                                     </div>
                                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 portfolio-content">
                                         <h4 class="">Project Info:</h4>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem Ipsum has been the industry's standard dummy text ever since the
-                                            1500s, when an unknown printer took a galley book.</p>
+                                        <p>Library manager web app built on Flask framework, bootstrap, and vanilla js.
+                                            <br>
+                                            - Login authentication and role-based access
+                                            <br>
+                                            - Create catalogs and personal shelves and recommend them to friends
+                                            <br>
+                                            - Place issue, hold, return requests
+                                            <br>
+                                            - Dynamic regex-based books search
+                                            <br>
+                                            - Database apis scheduler to generate fines and send emails
+                                        </p>
                                         <h4 class="mt-4">Project Details:</h4>
                                         <ul>
-                                            <li class="mb-1"><strong>Client</strong>: Lorem Ipsum</li>
-                                            <li class="mb-1"><strong>Category</strong>: Web design</li>
-                                            <li class="mb-1"><strong>Technologies</strong>: HTML5, CSS3, WordPress, PHP,
-                                                jQuery</li>
-                                            <li class="mb-1"><strong>Project date</strong>: 21 May, 2020</li>
+                                            <li class="mb-1"><strong>Name</strong>: LMS - Library Management System</li>
+                                            <li class="mb-1"><strong>Category</strong>: Web Development</li>
+                                            <li class="mb-1"><strong>Technologies</strong>: HTML5, CSS3, JS, Bootstrap,
+                                                Flask</li>
+                                            <li class="mb-1"><strong>Project date</strong>: 21 March, 2021</li>
                                             <li class="mb-1"><strong>Project URL</strong>: <a
-                                                    href="#">www.example.com</a></li>
+                                                    href="#">http://g3dbms.pythonanywhere.com/</a></li>
                                         </ul>
                                         <ul class="d-flex flex-row align-items-center text-center">
-                                            <li class="block-title"><strong class="font-14 parent-color pr-2">Share:
+                                            <li class="block-title"><strong class="font-14 parent-color pr-2">Git:
                                                 </strong></li>
-                                            <li class="mr-3"><a href="#" data-toggle="tooltip" data-placement="top"
-                                                    data-original-title="Facebook"><i class="fa fa-facebook"></i></a>
+                                            <li class="mr-3"><a
+                                                    href="https://github.com/Kuldeep-Singh-28/Library-management-system"
+                                                    data-toggle="tooltip" data-placement="top"
+                                                    data-original-title="github"><i class="fa fa-github"></i></a>
                                             </li>
-                                            <li class="mr-3"><a href="#" data-toggle="tooltip" data-placement="top"
-                                                    data-original-title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                                            <li class="mr-3"><a href="#" data-toggle="tooltip" data-placement="top"
-                                                    data-original-title="Google plus"><i
-                                                        class="fa fa-google-plus"></i></a></li>
-                                            <li class="mr-3"><a href="#" data-toggle="tooltip" data-placement="top"
-                                                    data-original-title="Instagram"><i class="fa fa-instagram"></i></a>
-                                            </li>
-                                            <li class="mr-3"><a href="#" data-toggle="tooltip" data-placement="top"
-                                                    data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a>
-                                            </li>
+
                                         </ul>
                                     </div>
                                 </div>
@@ -927,7 +914,7 @@
                         </div>
                         <!-- End Portfolio Five -->
                         <!-- Portfolio Six -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-music">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 row-item portfolio-item filter-apps">
                             <div class="portfolio-wrap">
                                 <img src="assets/images/portfolio/portfolio-6.jpg" class="img-fluid"
                                     alt="Portfolio 6" />
@@ -962,7 +949,7 @@
                                             1500s, when an unknown printer took a galley book.</p>
                                         <h4 class="mt-4">Project Details:</h4>
                                         <ul>
-                                            <li class="mb-1"><strong>Client</strong>: Lorem Ipsum</li>
+                                            <li class="mb-1"><strong>Name</strong>: Lorem Ipsum</li>
                                             <li class="mb-1"><strong>Category</strong>: Web design</li>
                                             <li class="mb-1"><strong>Technologies</strong>: HTML5, CSS3, WordPress, PHP,
                                                 jQuery</li>
@@ -971,7 +958,7 @@
                                                     href="#">www.example.com</a></li>
                                         </ul>
                                         <ul class="d-flex flex-row align-items-center text-center">
-                                            <li class="block-title"><strong class="font-14 parent-color pr-2">Share:
+                                            <li class="block-title"><strong class="font-14 parent-color pr-2">Git:
                                                 </strong></li>
                                             <li class="mr-3"><a href="#" data-toggle="tooltip" data-placement="top"
                                                     data-original-title="Facebook"><i class="fa fa-facebook"></i></a>
@@ -1034,12 +1021,15 @@
                                     <div class="card-content ml-3">
                                         <h3>Social Profiles</h3>
                                         <div class="social-links d-flex flex-wrap">
-                                            <a href="#" data-toggle="tooltip" data-placement="top"
-                                                data-original-title="github"><i class="fa fa-github"></i></a>
-                                            <a href="#" data-toggle="tooltip" data-placement="top"
-                                                data-original-title="Instagram"><i class="fa fa-instagram"></i></a>
-                                            <a href="#" data-toggle="tooltip" data-placement="top"
-                                                data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                                            <a href="https://github.com/Kuldeep-Singh-28" data-toggle="tooltip"
+                                                data-placement="top" data-original-title="github" target="_blank"><i
+                                                    class="fa fa-github"></i></a>
+                                            <a href="https://www.instagram.com/kuldeepsingh_28/" data-toggle="tooltip"
+                                                data-placement="top" data-original-title="Instagram" target="_blank"><i
+                                                    class="fa fa-instagram"></i></a>
+                                            <a href="https://www.linkedin.com/in/kuldeepsiingh/" data-toggle="tooltip"
+                                                data-placement="top" data-original-title="Linkedin" target="_blank"><i
+                                                    class="fa fa-linkedin"></i></a>
                                         </div>
                                     </div>
                                 </div>

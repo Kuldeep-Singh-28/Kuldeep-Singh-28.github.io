@@ -728,6 +728,114 @@ button:focus {
   font-weight: 600;
 }
 
+/* Customers Testimonial --*/
+.customers-testimonial .item {
+  text-align: center;
+  margin-bottom: 5px;
+  padding: 20px 20px;
+  opacity: 0;
+  visibility: hidden;
+  display: block;
+  border: 3px solid #424242;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  -webkit-transform: scale3d(0.8, 0.8, 1);
+  transform: scale3d(0.8, 0.8, 1);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.customers-testimonial .item.active {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+.customers-testimonial p {
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0 0 17px 0;
+  font-style: italic;
+}
+.customers-testimonial .name {
+  margin: 17px auto 0;
+  display: table;
+  width: auto;
+  padding: 6px 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+.customers-testimonial .item:hover .name {
+  background-color: #ffffff;
+  color: #2e3135;
+}
+.customers-testimonial .item img {
+  max-width: 90px;
+  margin: 0 auto 17px;
+  border-radius: 40%;
+}
+
+/* Carousel Slider */
+.carousel .carousel-control-next,
+.carousel .carousel-control-next:focus,
+.carousel .carousel-control-prev,
+.carousel .carousel-control-prev:focus {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 26px;
+  text-align: center;
+  color: #333333;
+  background-color: #ffffff;
+  top: calc(50% - 50px);
+  border-radius: 50%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.carousel .carousel-control-prev {
+  left: -10px;
+}
+.carousel .carousel-control-next {
+  right: -10px;
+}
+/* Carousel Arrow */
+.carousel .carousel-control-next:hover,
+.carousel .carousel-control-prev:hover {
+  opacity: 0;
+  color: #ffffff;
+  background-color: #333333;
+}
+.carousel:hover .carousel-control-next,
+.carousel:hover .carousel-control-prev {
+  opacity: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* Carousel Dots */
+.carousel .carousel-indicators {
+  position: relative;
+  margin: 30px auto 0;
+}
+.carousel .carousel-indicators li.active,
+.carousel .carousel-indicators li:hover {
+  -webkit-transform: translate3d(0px, -50%, 0px) scale(0.7);
+  transform: translate3d(0px, -50%, 0px) scale(0.7);
+}
+.carousel .carousel-indicators li {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  margin: 0 2px 0;
+  border: none;
+  -webkit-transform: translate3d(0px, -50%, 0px) scale(0.5);
+  transform: translate3d(0px, -50%, 0px) scale(0.5);
+  -webkit-transition: all 250ms ease-out 0s;
+  transition: all 250ms ease-out 0s;
+  border-radius: 50%;
+}
+
 /*-----------------------------------------
 * 11. Portfolio Section
 * -----------------------------------------*/
