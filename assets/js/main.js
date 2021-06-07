@@ -437,7 +437,7 @@
     if (valid) {
       $.ajax({
         type: "POST",
-        url: "mail.php",
+        url: "https://kuldeepsingh28.herokuapp.com/assets/php/mail.php",
         data: frm.serialize(),
         beforeSend: function () {
           $(".loading").show();
