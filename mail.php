@@ -1,5 +1,4 @@
 <?php
-include_once("index.html");
 
 // get data from form
 if (isset($_POST['submit'])) {
