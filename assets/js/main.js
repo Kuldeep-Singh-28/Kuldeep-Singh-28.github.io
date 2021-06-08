@@ -444,6 +444,7 @@
         },
         success: function (response) {
           $(".loading").hide();
+          console.log(response);
           var response = JSON.parse(response);
           if (response.success) {
             $(".response-msg").html(response.success);
