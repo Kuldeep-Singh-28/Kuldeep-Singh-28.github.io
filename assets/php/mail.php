@@ -18,13 +18,11 @@ if (isset($_POST['submit'])) {
     if( mail($to,$subject,$txt,$headers)){
   $result = array("success"=>"<p class=\"alert alert-success w-100 m-0 mt-4\">Thank you for your message. It has been sent.</p>");
         echo json_encode($result);
-        exit;
     }
     else
     {
         $result = array("success"=>"<p class=\"alert alert-danger w-100 m-0 mt-4\">Please try again!!</p>");
         echo json_encode($result);
-        exit;
 
     }
 
