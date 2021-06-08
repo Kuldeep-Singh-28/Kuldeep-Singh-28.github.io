@@ -446,6 +446,7 @@
           $(".loading").hide();
           console.log(response);
           var response = JSON.parse(response);
+          console.log(response);
           if (response.success) {
             $(".response-msg").html(response.success);
             $("#contact-form")[0].reset();
