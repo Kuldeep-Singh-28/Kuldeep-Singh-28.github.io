@@ -25,9 +25,7 @@ if (isset($_POST['submit'])) {
         echo json_encode($result);
 
     }
-
 }
-
 ?>
 
 
